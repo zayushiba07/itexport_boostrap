@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel Fix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-item img {
+      height: 400px; /* or use max-height: 100%; for responsiveness */
+      object-fit: cover; /* makes image fill container without distortion */
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/800/400?random=1" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
